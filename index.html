@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamilselvan's Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+   
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Background Animation -->
+    <div class="matrix-animation"></div>
+
+    <!-- Header -->
+  <header class="header">
+      <video autoplay muted loop id="bg-video">
+          <source src="hacks.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+      <img src="icon.jpg" alt="Logo" class="logo"><br>
+      <h1 class="animate__animated animate__fadeInDown">Welcome to Tamilselvan's<br> Portfolio</h1><br>
+      <p class="tagline animate__animated animate__fadeInUp">"Exploring The Details"</p>
+  </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="#about" class="nav-link">About Me</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <button class="nav-toggle" id="nav-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <h2 class="animate__animated animate__fadeInDown">About Me</h2>
+        <img src="tamil.jpg" alt="Author" class="author-image animate__animated animate__fadeIn">
+        <h5>S.Tamilselvan<br>
+        BE(Cyber Security)</h5>
+        <p class="num">
+            I am a cybersecurity enthusiast specializing in ethical hacking, web development, and firewall enhancements. I hold certifications in cybersecurity and have actively participated in national-level hackathons and paper presentations, showcasing my technical skills and innovative approaches to security challenges.
+        </p>
+        <button class="read-more-btn">Read More</button>
+        <div class="read-more-content">
+            <p>
+                I have a strong passion for cybersecurity and enjoy staying up-to-date with the latest threats and technologies.
+                I am always looking for new challenges and opportunities to learn and grow.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2 class="animate__animated animate__fadeInDown">Skills</h2>
+        <div class="skills-bar">
+            <div class="skill" data-width="80">
+                <p>HTML, Css ,JavaScript</p>
+                <div class="progress">
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <div class="skill" data-width="85">
+                <p>Python, C ,C++</p>
+                <div class="progress">
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <div class="skill" data-width="92">
+                <p>Ethical Hacking</p>
+                <div class="progress">
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <div class="skill" data-width="75">
+                <p>Bash, Shell</p>
+                <div class="progress">
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <div class="skill" data-width="78">
+                <p>Other Languages</p>
+                <div class="progress">
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2 class="animate__animated animate__fadeInDown">Projects</h2>
+        <div class="project">
+            <h3 class="animate__animated animate__fadeInUp">ECP Technology: </h3>
+            <p class="num">
+                An advanced cybersecurity Tools And Linux Kernel development.
+            </p>
+            <button class="project-btn">View Project</button>
+        </div>
+        <div class="project">
+            <h3 class="animate__animated animate__fadeInUp">Cyber Security Related App: </h3>
+            <p class="num">
+                The App security & Wifi Apps , CLA Apps & Total 150+ Apps and Website & Tools developed.
+            </p>
+            <button class="project-btn">View Project</button>
+
+        </div>
+        <div class="project">
+            <h3 class="animate__animated animate__fadeInUp">Hacking Hardware Project: </h3>
+            <p class="num">
+                Wi-Fi Penetration Tool: Portable device with Raspberry Pi for wireless network testing using Kali Linux and Aircrack-ng.
+                USB Rubber Ducky Clone: Low-cost Digispark tool for ethical USB testing and awareness.
+                IoT Security Tester: Simulate and secure IoT vulnerabilities with Raspberry Pi and MQTT.
+                Keylogger Demo: Arduino-based keylogger to teach endpoint security.
+                Network IDS: Raspberry Pi with Snort to detect network threats.
+                RFID/NFC Analyzer: Clone and test NFC/RFID tags for better security.
+                Physical Security Auditor: Raspberry Pi with OpenCV for unauthorized access detection.
+                Bluetooth Tester: Raspberry Pi and Ubertooth for Bluetooth vulnerability analysis.
+                Hacking Toolkit: Portable Raspberry Pi with pre-installed ethical hacking tools.
+                Password Cracker: FPGA-based cracker to highlight strong password importance and ECP Technology ect..            </p>
+            <button class="project-btn">View Project</button>
+        </div>
+    </section>
+
+  <div class="achievements-slider">
+    <div class="slider-track">
+        <img src="my1.jpg" alt="Achievement 1" />
+        <img src="my2.jpg" alt="Achievement 2" />
+        <img src="my3.jpg" alt="Achievement 3" />
+        <img src="my4.jpg" alt="Achievement 4" />
+      
+    </div>
+</div>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 class="animate__animated animate__fadeInDown">Contact</h2>
+        <form action="send.html" method="post" class="contact-form">
+            <input type="text" name="name" id="name" placeholder="Your Name" required>
+            <input type="email" name="email" id="email" placeholder="Your Email" required>
+            <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="social-media">
+            
+            <a href="https://www.linkedin.com/in/tamil-selvan-383618304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/tamil5265" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2024 S. Tamilselvan. All rights reserved.</p>
+        <p>Support Email: <a href="mailto:tamilselvan637986@gmail.com">tamilselvan637986@gmail.com</a></p>
+    </footer>
+    
+
+    <!-- Fun Game Section -->
+    <section id="fungame" class="section">
+        <h2 class="animate__animated animate__fadeInDown">😜Fun Game😜</h2>
+        <p>Take a break and enjoy a fun hacking-themed game!</p>
+        <p>🎉🎉The Game Crate for Me  College Hacking Festival Day's 🎉🎉..</p><br>
+        <h6>UserID : tamilselvan</h6>
+        <h6>Password : tamilselvan</h6>
+        <h6>Level 1 ==> My Friend Face Mani Ball Game</h6>
+        <h6>Level 2 ==> Matrix</h6>
+        <h6>Level 3 ==> Python Basic Questions</h6>
+
+        <a href="https://tamilselvan-hacking-games.web.app/" class="fun-game-btn">Play🎮Now</a>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
